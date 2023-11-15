@@ -57,9 +57,28 @@ body{
     /* style */
     border-radius: 25px;
     cursor: pointer;
-
     
 }
+
+.btn-type3{
+    /* dimension */
+    height: 500px;
+    width: 300px;
+
+
+    /* display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    /* style */
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
 
 
 /* -- HEADER + NAVBAR -- */
@@ -102,7 +121,7 @@ nav .logo img{
 }
 
 nav .brand-name img{
-    /* dimesnion */
+    /* dimension */
     height: 50px;
 }
 
