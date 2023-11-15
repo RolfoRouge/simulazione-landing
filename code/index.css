@@ -1,0 +1,46 @@
+/* -- JUMBO SECTION -- */
+.jumbo{
+    /* dimension */
+    height: calc(100vh - 100px);
+
+    /* display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* text */
+    color: #FFF;
+    font-size: 90px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    
+
+    /* background */
+    background-image: url("../images/jumbo-background.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.jumbo .CTA{
+
+    /* display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.jumbo .CTA .btns .btn-type1, .jumbo .CTA .btns .btn-type2{
+    /* animation */
+    transition: transform .2s;
+}
+
+.jumbo .CTA .btns .btn-type1:hover, .jumbo .CTA .btns .btn-type2:hover{
+    background-color: #000;
+    transform: scale(1.2);
+}
+

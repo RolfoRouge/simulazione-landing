@@ -9,6 +9,7 @@
 /* link default */
 a{
     text-decoration: none;
+    color: #FFF;
 }
 
 /* body default */
@@ -17,7 +18,7 @@ body{
     font-family: 'Inter', sans-serif;
 
     /* background */
-    background-color: #85C7F2;
+    background-color: #DBDBDB;
 }
 
 
@@ -26,7 +27,6 @@ body{
 
 .wrapper{
     /* dimension */
-    height: 100px;
     max-width: 1400px;
     margin: 0 auto;
 
@@ -34,22 +34,55 @@ body{
     /* border: 2px solid black; */
 }
 
+.btns{
+    /* display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.btn-type1, .btn-type2{
+    /* margin + padding */
+    padding: 10px 20px;
+
+    /* text */
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFF;
+
+    /* background */
+    background-color: #000;
+
+    /* style */
+    border-radius: 25px;
+    cursor: pointer;
+
+    
+}
+
 
 /* -- HEADER + NAVBAR -- */
 
 
 nav{
+    /* dimension */
+    height: 100px;
+
     /* background */
     background-color: #000;
 
     /* text */
     font-weight: bold;
     font-size: 20px;
-    color: #D1D1D1;
+    color: #FFF;
 
 }
 
 nav .wrapper{
+    /* dimension */
+    height: 100px;
+
     /* margin and padding */
     padding-left: 20px;
     padding-right: 20px;
@@ -89,12 +122,15 @@ nav .menu ul li{
 nav .menu ul li a{
     /* style */
     color: #FFF;
+
 }
 
 nav .menu ul li a:hover{
     color: #D1D1D1;
     text-decoration: underline;
 }
+
+
 
 
 
