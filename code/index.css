@@ -10,7 +10,7 @@
 
     /* text */
     color: #FFF;
-    font-size: 90px;
+    font-size: 6vw;
     font-weight: bolder;
     letter-spacing: 2px;
     
@@ -35,41 +35,142 @@
 
 }
 
-.jumbo .CTA .btns .btn-type1, .jumbo .CTA .btns .btn-type2{
+.jumbo .CTA .btns .btn-type1{
     /* animation */
     transition: transform .2s;
 }
 
-.jumbo .CTA .btns .btn-type1:hover, .jumbo .CTA .btns .btn-type2:hover{
-    background-color: #000;
-    transform: scale(1.2);
+
+/* -- SECTION  -- */
+.sec-1{
+    /* margin+padding */
+    padding-top: 5vh;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    padding-bottom: 5vh;
+
 }
 
 
-/* -- SECTION  -- */
 .sec-1 .wrapper, .sec-2 .wrapper{
+
+    /* dimension */
+    height: 50vh;
+
+    /* margin + padding */
+    /* padding: 50px; */
+
 
     /* display */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 50px;
-
-    /* background */
-    background-color: #FFF;
 
     /* text */
     font-size: 25px;
 
+    /* background */
+    background-color: #FFF;
+
+    /* style */
+    border-radius: 4vw;
+
+}
+
+.sec-1 .img{
+    /* dimension */
+    height: 100%;
+    width: 100%;
+
+    /* background */
+    background-image: url("../images/img-sec1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* text */
+    font-size: 5vw;
+
+    /* style */
+    border-top-left-radius: 4vw;
+    border-bottom-left-radius: 4vw; 
+    
+    /* animation */
+
+    
+}
+
+.sec-1 .img:hover, .sec-2 .img:hover{
+    filter: brightness(50%);
 }
 
 .sec-1 .wrapper .txt{
+    /* text */
     text-align: end;
 }
 
+.sec-1 .wrapper .txt h2, .sec-2 .wrapper .txt h2{
+    /* text */
+    font-size: 6vw;
+    color: #4C4C4C;
+
+}
+
 .sec-1 .wrapper .txt, .sec-2 .wrapper .txt{
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+.sec-1 .wrapper .img a, .sec-2 .wrapper .img a{
+    /* dimension */
+    height: 100%;
+    width: 100%;
+    
+    /* display */
+    display: none;
+
+}
+
+.sec-1 .wrapper .img:hover a, .sec-2 .wrapper .img:hover a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-2{
+    padding-bottom: 5vh;
+    padding-right: 3vw;
+    padding-left: 3vw;
+}
+
+.sec-2 .img{
+    /* dimension */
+    height: 100%;
+    width: 100%;
+
+    /* background */
+    background-image: url("../images/img-sec2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    /* text */
+    font-size: 5vw;
+ 
+
+    /* style */
+    border-top-right-radius: 4vw;
+    border-bottom-right-radius: 4vw; 
 }
 
 .sec-2 .wrapper{
@@ -78,8 +179,26 @@
 }
 
 
+
 /* -- DISCOVER-MORE -- */
+
+#discover-more{
+    /* dimension */
+    height: 100vh;
+
+    /* margin + padding */
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-right: 3vw;
+    padding-left: 3vw;
+
+}
+
 #discover-more .wrapper{
+
+    /* dimension */
+    height: 90vh;
+
     /* display */
     display: flex;
     align-items: center;
@@ -90,20 +209,23 @@
     background-color: #D20000;
 
     /* text */
-    font-size: 60px;
+    font-size: 4vw;
     color: #FFF;
 
     /* padding */
     padding-top: 10%;
     padding-bottom: 10%;
-    gap: 50px;
+    gap: 6vh;
+
+    /* style */
+    border-radius: 4vw;
 
 }
 
 #discover-more .menu ul{
     /* display */
     display: flex;
-    gap: 50px;
+    gap: 3vw;
 }
 
 #discover-more .menu ul li{
@@ -124,6 +246,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /* text */
+    font-size: 3.5vw;
 }
 
 #discover-more .btn-type3:hover{
@@ -132,15 +257,24 @@
 
 #discover-more .box-1{
     /* background */
-    background-image: url("../images/jumbo-background.jpeg");
+    background-image: url("../images/img-home.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 #discover-more .box-2{
     /* background */
-    background-image: url("../images/jumbo-background.jpeg");
+    background-image: url("../images/img-aboutus.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 #discover-more .box-3{
     /* background */
-    background-image: url("../images/jumbo-background.jpeg");
+    background-image: url("../images/img-contacts.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 

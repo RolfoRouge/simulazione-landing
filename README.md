@@ -1,5 +1,4 @@
 
-
 # CODE: HTML
 
  1. ## Index
@@ -27,7 +26,9 @@
 
  1. **v0.1:** Repo contents (html, css files), google font imports, Navbar
  2. **v1.0:** Homepage Jumbo-section, CTA buttons
- 3. **v1.1:** Section discover-more, 
+ 3. **v2.0:** Section 1, section 2
+ 4. **v2.1** Section discover-more
+ 5. **v2.2** Footer, aesthetic improvement
 
 
 
