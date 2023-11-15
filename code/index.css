@@ -1,7 +1,7 @@
 /* -- JUMBO SECTION -- */
 .jumbo{
     /* dimension */
-    height: calc(100vh - 100px);
+    height: calc(100vh - 100px); 
 
     /* display */
     display: flex;
@@ -20,6 +20,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    /* border */
+    border-bottom: 3px solid black;
 
 }
 
@@ -42,6 +45,38 @@
 .jumbo .CTA .btns .btn-type1:hover, .jumbo .CTA .btns .btn-type2:hover{
     background-color: #000;
     transform: scale(1.2);
+}
+
+
+/* -- SECTION 1 -- */
+.sec-1 .wrapper, .sec-2 .wrapper{
+
+    /* display */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+    /* background */
+    background-color: #FFF;
+
+    /* text */
+    font-size: 25px;
+
+}
+
+.sec-1 .wrapper .txt{
+    text-align: end;
+}
+
+.sec-1 .wrapper .txt, .sec-2 .wrapper .txt{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.sec-2 .wrapper{
+    /* display */
+    flex-direction: row-reverse;
 }
 
 
