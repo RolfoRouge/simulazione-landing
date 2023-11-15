@@ -1,0 +1,102 @@
+/* -- CSS Reset -- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* link default */
+a{
+    text-decoration: none;
+}
+
+/* body default */
+body{
+    /* text */
+    font-family: 'Inter', sans-serif;
+
+    /* background */
+    background-color: #85C7F2;
+}
+
+
+
+/* -- UTILITIES -- */
+
+.wrapper{
+    /* dimension */
+    height: 100px;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    /* border */
+    /* border: 2px solid black; */
+}
+
+
+/* -- HEADER + NAVBAR -- */
+
+
+nav{
+    /* background */
+    background-color: #000;
+
+    /* text */
+    font-weight: bold;
+    font-size: 20px;
+    color: #D1D1D1;
+
+}
+
+nav .wrapper{
+    /* margin and padding */
+    padding-left: 20px;
+    padding-right: 20px;
+
+    /* display */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img{
+    /* dimesnion */
+    height: 50px;
+    width: 150px;
+    /* margin */
+    margin-top: 10px;
+}
+
+nav .brand-name img{
+    /* dimesnion */
+    height: 50px;
+}
+
+nav .menu ul{
+    /* display */
+    display: flex;
+    gap: 20px;
+}
+
+nav .menu ul li{
+    /* style */
+    list-style: none; 
+}
+
+
+/* navbar menu-link style */
+nav .menu ul li a{
+    /* style */
+    color: #FFF;
+}
+
+nav .menu ul li a:hover{
+    color: #D1D1D1;
+    text-decoration: underline;
+}
+
+
+
+
+
