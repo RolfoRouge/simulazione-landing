@@ -33,7 +33,7 @@ body{
     /* border: 2px solid black; */
 }
 
-
+/* buttons */
 .btns{
     /* display */
     display: flex;
@@ -42,6 +42,7 @@ body{
     gap: 2vw;
 }
 
+/* small button */
 .btn-type1 {
     /* margin + padding */
     padding: 10px 20px;
@@ -65,7 +66,9 @@ body{
     background-color: #D20000;
 }
 
+/* medium button */
 .btn-type3{
+
     /* dimension */
     height: 45vh;
     width: 16vw;
@@ -81,7 +84,6 @@ body{
     /* style */
     border-radius: 25px;
     cursor: pointer;
-
 }
 
 
@@ -223,9 +225,6 @@ footer .copyright{
     display: flex;
     justify-content: center;
     align-items: center;
-
-
-
 }
 
 
