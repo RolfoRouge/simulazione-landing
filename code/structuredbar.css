@@ -26,7 +26,7 @@ body{
 
 .wrapper{
     /* dimension */
-    max-width: 2200px;
+    max-width: 2000px;
     margin: 0 auto;
 
     /* border */
@@ -45,7 +45,7 @@ body{
 /* small button */
 .btn-type1 {
     /* margin + padding */
-    padding: 10px 20px;
+    padding: 1vh 1vw;
 
     /* text */
     font-size: 2vw;
@@ -62,7 +62,7 @@ body{
 }
 
 .btn-type1:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-color: #D20000;
 }
 
@@ -82,7 +82,7 @@ body{
 
 
     /* style */
-    border-radius: 25px;
+    border-radius: 2vw;
     cursor: pointer;
 }
 
@@ -93,7 +93,7 @@ body{
 
 nav{
     /* dimension */
-    height: 200px;
+    height: 15vh;
 
     /* background */
     background-color: #000;
@@ -107,11 +107,11 @@ nav{
 
 nav .wrapper{
     /* dimension */
-    height: 200px;
+    height: 15vh;
 
     /* margin and padding */
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 2vh;
+    padding-right: 2vw;
 
     /* display */
     display: flex;
@@ -119,27 +119,30 @@ nav .wrapper{
     align-items: center;
 }
 
+nav .logo {
+    display: none;
+}
+
 nav .logo img{
     /* dimesnion */
-    height: 50px;
-    width: 150px;
+    height: 5vh;
+    width: 15vw;
+
     /* margin */
-    margin-right: auot;
-    margin-top: 10px;
+    margin-right: auto;
+    margin-top: 1vh;
 }
 
 nav .brand-name img{
     /* dimension */
-    height: 50px;
+    height: 5vh;
     /* margin */
-    margin-right: auto;
-    margin-left: auto;
 }
 
 nav .menu ul{
     /* display */
     display: flex;
-    gap: 50px;
+    gap: 2vw;
 
     /* margin */
     margin-left: auto;
@@ -149,7 +152,7 @@ nav .menu ul li{
     /* style */
     list-style: none; 
     /* text */
-    font-size: 30px;
+    font-size: 2vh;
 }
 
 
@@ -165,18 +168,39 @@ nav .menu ul li a:hover{
     text-decoration: underline;
 }
 
+nav .burger-menu {
+    display: none;
+    height: 6vh;
+    width: 10vw;
+
+    background-image: url(../images/burger-menu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav .burger-menu a {
+    height: 100%;
+    width: 100%;
+    font-size: 1px;
+}
+
+nav .burger-menu:hover {
+    filter: brightness(50%);
+}
+
 /* -- FOOTER -- */
 footer{
 
     /* dimension */
-    height: 700px;
+    height: 70vh;
 
     /* background */
     background-color: black;
 
     /* text */
     color: #FFF;
-    font-size: 30px;
+    font-size: 1.5vw;
     font-weight: lighter;
 }
 
@@ -187,9 +211,9 @@ footer .foot{
 
 footer .wrapper{
     /* dimension */
-    height: 600px;
+    height: 60vh;
     /* margin + padding */
-    padding: 50px;
+    padding: 2vh 2vw;
     /* display */
     display: flex;
     justify-content: space-between;
@@ -198,19 +222,34 @@ footer .wrapper{
 
 .foot ul li {
     list-style: none;
-    margin-top: 20px;
+    margin-top: 2vh;
 }
 
-.foot .logo .img{
+.foot .logo {
+    display: none;
+}
+
+.foot .logo img{
+    /* dimesnion */
+    height: 5vh;
+    width: 15vw;
+
+    /* margin */
+    margin-right: auto;
+    margin-top: 1vh;
+}
+
+.foot .brand-name .img{
     /* dimension */
-    height: 50px;
+    height: 5vh;
+    width: 15vw;
 }
 
 .foot .menu {
     /* display */
     display: flex;
     justify-content: end;
-    gap: 150px;
+    gap: 6vh;
 }
 
 footer .copyright{
@@ -225,6 +264,56 @@ footer .copyright{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/* -- MEDIA QUERIES -- */
+
+/* Mobile */
+@media only screen and (max-width: 1000px) {
+
+    /* utilities */
+    .btn-type1 {
+        font-size: 4vw;
+    }
+
+    .btn-type3 {
+        height: 20vh;
+        width: 60vw;
+    }
+
+    /* navbar */
+    nav .logo {
+        display: block;
+    }
+
+    nav .brand-name {
+        display: none;
+    }
+
+    nav .menu{
+        display: none;
+    }
+
+    nav .burger-menu {
+        display: block;
+    }
+    
+    /* footer */
+    footer {
+        font-size: 3vw;
+    }
+
+    .foot .brand-name {
+        display: none;
+    }
+
+    .foot .logo{
+        display: block;
+    }
+
+
+
 }
 
 

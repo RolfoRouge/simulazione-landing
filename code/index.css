@@ -3,7 +3,7 @@
 .jumbo{
 
     /* dimension */
-    height: calc(100vh - 100px); 
+    height: calc(100vh - 15vh); 
 
     /* display */
     display: flex;
@@ -44,9 +44,10 @@
 /* -- SECTION  -- */
 
 .sec-1 .wrapper, .sec-2 .wrapper{
-    
+
     /* dimension */
-    height: 50vh;
+    height: 41vh;
+    
     
     /* margin + padding */
     /* padding: 50px; */
@@ -103,7 +104,6 @@
 }
 
 .sec-1 .wrapper .txt h2, .sec-2 .wrapper .txt h2{
-    /* dimension */
 
     /* text */
     font-size: 4.5vw;
@@ -114,12 +114,14 @@
 /* SECTION 1 */
 
 .sec-1{
+
+    height: 50vh;
     
     /* margin+padding */
-    padding-top: 5vh;
+    padding-top: 6vh;
     padding-right: 3vw;
     padding-left: 3vw;
-    padding-bottom: 5vh;
+    padding-bottom: 3vh;
     
 }
 
@@ -157,7 +159,9 @@
 /* SECTION 2 */
 
 .sec-2{
-    padding-bottom: 5vh;
+    
+    padding-top: 3vh;
+    padding-bottom: 6vh;
     padding-right: 3vw;
     padding-left: 3vw;
 }
@@ -237,6 +241,10 @@
 
 }
 
+#discover-more .wrapper h2 {
+    font-size: 5.5vw;
+}
+
 #discover-more .menu ul{
     /* display */
     display: flex;
@@ -292,5 +300,73 @@
     background-size: cover;
 }
 
+
+/* -- MEDIA QUERIES -- */
+
+/* Mobile */
+@media only screen and (max-width: 1000px) {
+
+    /* SECTION */
+    .sec-1 .wrapper, .sec-2 .wrapper{
+
+        flex-direction: column;
+    
+    }
+
+    .sec-1 .wrapper .txt, .sec-2 .wrapper .txt {
+
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .sec-1 .wrapper .txt h2, .sec-2 .wrapper .txt h2{
+
+        font-size: 8vw;
+    }
+    
+    .sec-1 .img { 
+    
+        /* text */
+        font-size: 4.5vw;
+ 
+        /* style */
+        border-top-right-radius: 4vw;
+        border-bottom-left-radius: 0;
+
+
+    }
+
+    .sec-2 .wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .sec-2 .img { 
+    
+        /* text */
+        font-size: 4.5vw;
+ 
+        /* style */
+        border-bottom-left-radius: 4vw;
+        border-top-right-radius: 0;
+
+        /* background */
+        background-position: start;
+
+    }
+
+    /* DISCOVER-MORE */
+    #discover-more .menu ul{
+        flex-direction: column;
+    }
+
+    #discover-more .wrapper h2{
+        font-size: 10vw;
+    }
+
+
+
+
+}
 
 
