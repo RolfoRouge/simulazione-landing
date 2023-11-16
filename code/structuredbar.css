@@ -275,6 +275,7 @@ footer .copyright{
     /* utilities */
     .btn-type1 {
         font-size: 4vw;
+        border-radius: 4vw;
     }
 
     .btn-type3 {
