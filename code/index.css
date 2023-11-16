@@ -89,11 +89,22 @@
 }
 
 .sec-1 .wrapper .txt, .sec-2 .wrapper .txt{
+    /* dimension */
+    height: 100%;
+    width: 100%;
+
+    /* display */
+    display: flex;
+    align-items: center;
+
     padding-right: 5vw;
     padding-left: 5vw;
+    
 }
 
 .sec-1 .wrapper .txt h2, .sec-2 .wrapper .txt h2{
+    /* dimension */
+
     /* text */
     font-size: 4.5vw;
     color: #4C4C4C;
