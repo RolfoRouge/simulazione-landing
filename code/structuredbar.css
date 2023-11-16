@@ -252,6 +252,12 @@ footer .wrapper{
     gap: 6vh;
 }
 
+
+.foot .menu ul li a:hover{
+    color: #D1D1D1;
+    text-decoration: underline;
+}
+
 footer .copyright{
 
     /* margin + padding */
